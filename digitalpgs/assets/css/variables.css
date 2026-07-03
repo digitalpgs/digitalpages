@@ -1,0 +1,21 @@
+:root {
+  --bg: #0a0a0f;
+  --card: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.08);
+
+  --text: #ffffff;
+  --muted: rgba(255,255,255,0.65);
+
+  --primary: #a855f7;
+  --primary-2: #7c3aed;
+
+  --radius: 16px;
+}
+
+body.light-mode {
+  --bg: #ffffff;
+  --text: #0a0a0f;
+  --muted: rgba(0,0,0,0.6);
+  --card: rgba(0,0,0,0.04);
+  --border: rgba(0,0,0,0.08);
+}
