@@ -2,27 +2,23 @@
 <html lang="en">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>DigitalPages | Modern Digital Experiences</title>
-
   <meta name="description" content="DigitalPages creates modern websites, AI solutions and digital experiences that help businesses grow.">
 
   <!-- FAVICON -->
-  <link rel="icon" href="assets/images/logo/favicon.svg">
+  <link rel="icon" href="assets/images/logo/favicon.png">
 
   <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/style.css">
-
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="assets/css/hero.css">
   <link rel="stylesheet" href="assets/css/services.css">
@@ -31,10 +27,8 @@
   <link rel="stylesheet" href="assets/css/faq.css">
   <link rel="stylesheet" href="assets/css/contact.css">
   <link rel="stylesheet" href="assets/css/footer.css">
-
   <link rel="stylesheet" href="assets/css/animations.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
-
 </head>
 
 <body>
@@ -46,47 +40,63 @@
   <div class="cursor"></div>
   <div class="cursor-blur"></div>
 
+  <!-- ASSISTANT WIDGET / CHAT BOT (Digi) -->
+  <div class="assistant-widget" id="assistantWidget" aria-label="Digi assistant">
+    <button class="assistant-btn" id="assistantToggle" aria-label="Open assistant">🤖</button>
+
+    <div class="assistant-chat" id="assistantChat" aria-hidden="true">
+      <div class="assistant-chat-header">
+        <div class="assistant-header-left">
+          <span class="assistant-avatar">🤖</span>
+          <div>
+            <div class="assistant-name">Digi</div>
+            <div class="assistant-sub">Pro digital assistant</div>
+          </div>
+        </div>
+        <button class="assistant-close" id="assistantCloseBtn" aria-label="Close Digi">✕</button>
+      </div>
+
+      <div class="assistant-messages" id="assistantMessages" role="log" aria-live="polite"></div>
+      <div class="assistant-actions" id="assistantActions" aria-label="Suggested topics"></div>
+
+      <div class="assistant-input-area">
+        <input id="assistantInput" class="assistant-input" placeholder="Ask me about services, process, design or strategy..." aria-label="Type a message to Digi">
+        <button id="assistantSend" class="assistant-send">Send</button>
+      </div>
+    </div>
+  </div>
+
   <!-- APP WRAPPER -->
   <div id="app">
 
-    <!-- COMPONENTS -->
-    <header id="navbar"></header>
+    <!-- COMPONENTS (Ara amb les classes CSS correctes per rebre el contingut) -->
+    <header id="navbar" class="navbar"></header>
 
     <main>
-
-      <section id="hero"></section>
-
-      <section id="services"></section>
-
-      <section id="about"></section>
-
-      <section id="portfolio"></section>
-
-      <section id="faq"></section>
-
-      <section id="contact"></section>
-
+      <section id="hero" class="hero"></section>
+      <section id="services" class="services"></section>
+      <section id="about" class="about"></section>
+      <section id="portfolio" class="portfolio"></section>
+      <section id="faq" class="faq"></section>
+      <section id="contact" class="contact"></section>
     </main>
 
-    <footer id="footer"></footer>
+    <footer id="footer" class="footer"></footer>
 
   </div>
 
-  <!-- JS (IMPORTANT ORDER) -->
-
-  <script src="assets/js/components.js"></script>
-
-  <script src="assets/js/main.js"></script>
-
-  <script src="assets/js/cursor.js"></script>
-  <script src="assets/js/scroll.js"></script>
-  <script src="assets/js/animations.js"></script>
-  <script src="assets/js/theme.js"></script>
-  <script src="assets/js/language.js"></script>
-  <script src="assets/js/form.js"></script>
-  <script src="assets/js/faq.js"></script>
-  <script src="assets/js/loading.js"></script>
+  <!-- JS (Carregat de forma asíncrona controlada) -->
+  <script src="assets/js/components.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/cursor.js" defer></script>
+  <script src="assets/js/scroll.js" defer></script>
+  <script src="assets/js/animations.js" defer></script>
+  <script src="assets/js/theme.js" defer></script>
+  <script src="assets/js/language.js" defer></script>
+  <script src="assets/js/form.js" defer></script>
+  <script src="assets/js/faq.js" defer></script>
+  <script src="assets/js/loading.js" defer></script>
+  <script src="assets/js/assistant.js" defer></script>
 
 </body>
-
 </html>
