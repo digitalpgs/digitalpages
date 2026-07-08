@@ -1,0 +1,142 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  backdrop-filter: blur(20px);
+  background: rgba(10, 10, 15, 0.4);
+
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+body.light-mode .navbar {
+  background: rgba(255, 245, 254, 0.85);
+  border-bottom-color: rgba(124, 58, 237, 0.18);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 24px;
+}
+
+/* LOGO */
+.logo img {
+  height: 32px;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+    color: var(--text);
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+/* ACTIONS */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lang-switcher select {
+  background: rgba(247, 241, 255, 0.95);
+  border: 1px solid rgba(124, 58, 237, 0.22);
+  color: #2f1c4a;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 14px;
+  outline: none;
+  min-width: 110px;
+  box-shadow: 0 8px 18px rgba(124, 58, 237, 0.12);
+}
+
+.lang-switcher select option {
+  background: #f8f0ff;
+  color: #2f1c4a;
+}
+
+.icon-btn {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 8px;
+  border-radius: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.25s ease;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+body.light-mode .icon-btn {
+  background: rgba(40, 40, 40, 0.08);
+  color: #2f2f2f;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+body.light-mode .icon-btn:hover {
+  background: rgba(40, 40, 40, 0.12);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-2), var(--primary));
+  padding: 10px 16px;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background: rgb(196, 22, 22);
+  border-radius: 2px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

@@ -1,0 +1,162 @@
+﻿{
+  "nav": {
+    "home": "Inici",
+    "services": "Serveis",
+    "about": "Sobre mi",
+    "work": "Treball",
+    "contact": "Contacte",
+    "cta": "Parlem"
+  },
+  "hero": {
+    "tag": "DigitalPages",
+    "heading": "Dissenyem experiències digitals que se senten vives.",
+    "subtitle": "Des de webs fins a sistemes d'IA, DigitalPages construeix solucions modernes que ajuden les idees a convertir-se en negocis reals.",
+    "viewWork": "Veure projectes",
+    "build": "Fem alguna cosa",
+    "stats": {
+      "modern": "Modern",
+      "design": "Disseny",
+      "fast": "Ràpid",
+      "performance": "Rendiment",
+      "creative": "Creatiu",
+      "solutions": "Solucions"
+    }
+  },
+  "services": {
+    "tag": "El que faig",
+    "heading": "Serveis que t'ajuden a créixer",
+    "subtitle": "DigitalPages combina disseny, desenvolupament i automatització per construir experiències digitals modernes.",
+    "webDevelopment": {
+      "title": "Desenvolupament web",
+      "description": "Pàgines modernes, ràpides i adaptatives dissenyades per convertir visitants en clients."
+    },
+    "aiSolutions": {
+      "title": "Solucions d'IA",
+      "description": "Automatitzacions intel·ligents i eines d'IA que estalvien temps i escalen el teu negoci."
+    },
+    "automation": {
+      "title": "Automatització",
+      "description": "Automatitza tasques repetitives i millora l'eficiència del teu flux de treball."
+    },
+    "uiux": {
+      "title": "Disseny UI / UX",
+      "description": "Interfícies netes i modernes centrades en l'experiència d'usuari i la claredat."
+    },
+    "videoEditing": {
+      "title": "Edició de vídeo",
+      "description": "Edició creativa per a xarxes socials, branding i contingut promocional."
+    },
+    "socialMedia": {
+      "title": "Xarxes socials",
+      "description": "Estratègia de contingut i visuals que fan créixer la teva presència online."
+    }
+  },
+  "about": {
+    "tag": "Sobre mi",
+    "heading": "Hola, sóc l'Aina - la persona darrere de DigitalPages.",
+    "paragraph1": "Sóc una ment creativa jove apassionada pel disseny, la tecnologia i per construir experiències digitals que realment es notin vives. DigitalPages va néixer com una idea senzilla: crear webs que no només siguin boniques, sinó que ajudin la gent a créixer.",
+    "paragraph2": "M'agrada combinar disseny, desenvolupament i automatització per crear solucions modernes per problemes reals. Quan no treballo en projectes, normalment estic aprenent una cosa nova, explorant idees o simplement gaudint de la vida i sent jo mateixa.",
+    "imageAlt": "Aina - Fundadora de DigitalPages",
+    "stats": {
+      "creative": "Creativa",
+      "mindset": "Mentalitat",
+      "modern": "Modern",
+      "design": "Disseny",
+      "fast": "Ràpid",
+      "learning": "Aprenentatge"
+    }
+  },
+  "portfolio": {
+    "tag": "El meu treball",
+    "heading": "Projectes que defineixen DigitalPages",
+    "subtitle": "Una selecció d'experiències digitals, experiments i projectes futurs.",
+    "project1": {
+      "title": "Properament",
+      "description": "El primer projecte de client apareixerà aquí."
+    },
+    "project2": {
+      "title": "Properament",
+      "description": "Mostra de projecte d'IA o web."
+    },
+    "project3": {
+      "title": "Properament",
+      "description": "Treball d'automatització o creatiu."
+    }
+  },
+  "faq": {
+    "tag": "FAQ",
+    "heading": "Preguntes freqüents",
+    "subtitle": "Tot el que podries voler saber abans de treballar amb DigitalPages.",
+    "q1": {
+      "question": "Quins serveis ofereixes?",
+      "answer": "Desenvolupament web, solucions d'IA, automatització, disseny UI/UX, edició de vídeo i estratègies de xarxes socials."
+    },
+    "q2": {
+      "question": "Treballes amb petites empreses?",
+      "answer": "Sí. DigitalPages està dissenyat per ajudar tant projectes petits com negocis en creixement a construir una presència digital sòlida."
+    },
+    "q3": {
+      "question": "Quant temps triga un projecte?",
+      "answer": "Depèn de la complexitat, però la majoria de projectes triguen entre 1 i 4 setmanes."
+    },
+    "q4": {
+      "question": "Puc demanar un projecte personalitzat?",
+      "answer": "Absolutament. Cada projecte és personalitzat i adaptat a les teves necessitats i objectius."
+    },
+    "q5": {
+      "question": "Com puc contactar-te?",
+      "answer": "Pots utilitzar el formulari de contacte més avall o enviar un correu a dp.digitalpages@gmail.com."
+    }
+  },
+  "contact": {
+    "tag": "Contacte",
+    "heading": "Construïm alguna cosa increïble",
+    "subtitle": "Tens una idea? Un projecte? O simplement vols saludar? Parlem.",
+    "form": {
+      "name": "El teu nom",
+      "email": "El teu correu",
+      "message": "El teu missatge",
+      "submit": "Enviar missatge",
+      "note": "O envia'm un correu directament: dp.digitalpages@gmail.com"
+    },
+    "info": {
+      "emailHeading": "Email",
+      "socialHeading": "Social",
+      "responseHeading": "Temps de resposta",
+      "responseText": "Normalment dins de 24-48h"
+    }
+  },
+  "footer": {
+    "navigationHeading": "Navegació",
+    "contactHeading": "Contacte",
+    "socialHeading": "Social",
+    "bottom": "© 2026 DigitalPages. Tots els drets reservats."
+  },
+  "assistant": {
+    "greeting": "Hola — sóc Digi, la teva assistent. Pregunta'm el que vulguis sobre el lloc.",
+    "help": "Hola! Sóc Digi — en què et puc ajudar avui?",
+    "services": "Puc ajudar amb desenvolupament web, solucions d'IA, automatització, UI/UX i edició de vídeo. Vols veure exemples?",
+    "portfolio": "Pots trobar projectes a la secció Treball. Vols que t'hi porti?",
+    "contact": "Puc obrir el formulari de contacte per tu — vols que l'obri?",
+    "pricing": "El preu depèn de l'abast. Digue'm el tipus de projecte i et puc donar una estimació aproximada.",
+    "about": "DigitalPages està liderada per l'Aina i ofereix disseny web, automatització amb IA i experiències digitals que ajuden els negocis a créixer.",
+    "process": "Entenc els teus objectius, dissenyo una proposta clara, desenvolup una experiència responsive i la ajusto fins que el lloc estigui llest per publicar.",
+    "tech": "Utilitzo eines web modernes i codi net per crear llocs ràpids, accessibles i adaptats a mòbils que reflecteixin la teva marca.",
+    "automation": "Puc automatitzar fluxos de treball, implementar funcions millorades amb IA i connectar la teva web amb les eines que estalvien temps.",
+    "design": "Creo interfícies centrades en l'usuari, missatges de marca sòlids i dissenys que guien els visitants cap als teus objectius.",
+    "maintenance": "Després del llançament, puc donar suport a actualitzacions, canvis de contingut, comprovacions de rendiment i millores contínues.",
+    "best_practice": "Recomano disseny mobile-first, càrregues ràpides, crides a l'acció clares i un estil de marca consistent.",
+    "build_site": "Sí, puc crear una web per al teu negoci. Digue'm l'objectiu principal, el públic i les funcions que necessites, i et suggeriré el millor pla.",
+    "why_choose": "Combino disseny modern, eficiència tècnica i un procés professional per lliurar llocs i automatitzacions que ajuden el teu negoci a créixer.",
+    "thanks": "De res! Hi ha alguna altra cosa en què et pugui ajudar?",
+    "language": "Utilitza el selector d'idioma a la barra superior per canviar d'idioma.",
+    "unknown": "Ho sento, no ho he entès. Pots preguntar per serveis, procés, disseny, automatització, o dir 'contacte' per obrir el formulari.",
+    "open_work": "Fes clic aquí per anar a Treball.",
+    "quick_services": "Serveis",
+    "quick_process": "Flux",
+    "quick_tech": "Tecnologia",
+    "quick_automation": "Automatització",
+    "quick_design": "Disseny",
+    "quick_contact": "Contacte"
+  }
+}

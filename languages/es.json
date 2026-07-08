@@ -1,0 +1,162 @@
+﻿{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Sobre mí",
+    "work": "Trabajo",
+    "contact": "Contacto",
+    "cta": "Hablemos"
+  },
+  "hero": {
+    "tag": "DigitalPages",
+    "heading": "Diseñamos experiencias digitales que se sienten vivas.",
+    "subtitle": "Desde sitios web hasta sistemas de IA, DigitalPages crea soluciones modernas que ayudan a las ideas a convertirse en negocios reales.",
+    "viewWork": "Ver proyectos",
+    "build": "Construyamos algo",
+    "stats": {
+      "modern": "Moderno",
+      "design": "Diseño",
+      "fast": "Rápido",
+      "performance": "Rendimiento",
+      "creative": "Creativo",
+      "solutions": "Soluciones"
+    }
+  },
+  "services": {
+    "tag": "Lo que hago",
+    "heading": "Servicios que te ayudan a crecer",
+    "subtitle": "DigitalPages combina diseño, desarrollo y automatización para construir experiencias digitales modernas.",
+    "webDevelopment": {
+      "title": "Desarrollo Web",
+      "description": "Sitios web modernos, rápidos y responsivos diseñados para convertir visitantes en clientes."
+    },
+    "aiSolutions": {
+      "title": "Soluciones de IA",
+      "description": "Automatizaciones inteligentes y herramientas de IA que ahorran tiempo y escalan tu negocio."
+    },
+    "automation": {
+      "title": "Automatización",
+      "description": "Automatiza tareas repetitivas y mejora la eficiencia de tu flujo de trabajo."
+    },
+    "uiux": {
+      "title": "Diseño UI / UX",
+      "description": "Interfaces limpias y modernas centradas en la experiencia del usuario y la claridad."
+    },
+    "videoEditing": {
+      "title": "Edición de video",
+      "description": "Edición creativa para redes sociales, branding y contenido promocional."
+    },
+    "socialMedia": {
+      "title": "Redes Sociales",
+      "description": "Estrategia de contenido y visuales que hacen crecer tu presencia online."
+    }
+  },
+  "about": {
+    "tag": "Sobre mí",
+    "heading": "Hola, soy Aina - la persona detrás de DigitalPages.",
+    "paragraph1": "Soy una mente creativa joven apasionada por el diseño, la tecnología y construir experiencias digitales que realmente se sienten vivas. DigitalPages nació de una idea simple: crear sitios web que no solo se vean bien, sino que ayuden a las personas a crecer.",
+    "paragraph2": "Disfruto combinar diseño, desarrollo y automatización para crear soluciones modernas para problemas del mundo real. Cuando no trabajo en proyectos, normalmente estoy aprendiendo algo nuevo, explorando ideas o simplemente disfrutando de la vida y siendo yo misma.",
+    "imageAlt": "Aina - Fundadora de DigitalPages",
+    "stats": {
+      "creative": "Creativa",
+      "mindset": "Mentalidad",
+      "modern": "Moderno",
+      "design": "Diseño",
+      "fast": "Rápido",
+      "learning": "Aprendizaje"
+    }
+  },
+  "portfolio": {
+    "tag": "Mi trabajo",
+    "heading": "Proyectos que definen DigitalPages",
+    "subtitle": "Una selección de experiencias digitales, experimentos y proyectos futuros.",
+    "project1": {
+      "title": "Próximamente",
+      "description": "El primer proyecto de cliente aparecerá aquí."
+    },
+    "project2": {
+      "title": "Próximamente",
+      "description": "Muestra de proyecto de IA o web."
+    },
+    "project3": {
+      "title": "Próximamente",
+      "description": "Trabajo de automatización o creativo."
+    }
+  },
+  "faq": {
+    "tag": "FAQ",
+    "heading": "Preguntas frecuentes",
+    "subtitle": "Todo lo que podrías querer saber antes de trabajar con DigitalPages.",
+    "q1": {
+      "question": "¿Qué servicios ofreces?",
+      "answer": "Desarrollo web, soluciones de IA, automatización, diseño UI/UX, edición de video y estrategias de redes sociales."
+    },
+    "q2": {
+      "question": "¿Trabajas con pequeñas empresas?",
+      "answer": "Sí. DigitalPages está diseñado para ayudar tanto proyectos pequeños como negocios en crecimiento a construir una presencia digital sólida."
+    },
+    "q3": {
+      "question": "¿Cuánto tiempo tarda un proyecto?",
+      "answer": "Depende de la complejidad, pero la mayoría de los proyectos tardan entre 1 y 4 semanas."
+    },
+    "q4": {
+      "question": "¿Puedo solicitar un proyecto personalizado?",
+      "answer": "Absolutamente. Cada proyecto es personalizado y adaptado a tus necesidades y objetivos."
+    },
+    "q5": {
+      "question": "¿Cómo puedo contactarte?",
+      "answer": "Puedes usar el formulario de contacto abajo o enviar un correo a dp.digitalpages@gmail.com."
+    }
+  },
+  "contact": {
+    "tag": "Contacto",
+    "heading": "Construyamos algo increíble",
+    "subtitle": "¿Tienes una idea? ¿Un proyecto? ¿O simplemente quieres saludar? Hablemos.",
+    "form": {
+      "name": "Tu nombre",
+      "email": "Tu correo",
+      "message": "Tu mensaje",
+      "submit": "Enviar mensaje",
+      "note": "O envíame un correo directamente: dp.digitalpages@gmail.com"
+    },
+    "info": {
+      "emailHeading": "Email",
+      "socialHeading": "Social",
+      "responseHeading": "Tiempo de respuesta",
+      "responseText": "Normalmente dentro de 24-48h"
+    }
+  },
+  "footer": {
+    "navigationHeading": "Navegación",
+    "contactHeading": "Contacto",
+    "socialHeading": "Social",
+    "bottom": "© 2026 DigitalPages. Todos los derechos reservados."
+  },
+  "assistant": {
+    "greeting": "Hola — soy Digi, tu asistente. Pregúntame lo que quieras sobre el sitio.",
+    "help": "¡Hola! Soy Digi — ¿en qué puedo ayudarte hoy?",
+    "services": "Puedo ayudar con desarrollo web, soluciones de IA, automatización, UI/UX y edición de vídeo. ¿Quieres ver ejemplos?",
+    "portfolio": "Puedes encontrar proyectos en la sección Trabajo. ¿Quieres que te lleve allí?",
+    "contact": "Puedo abrir el formulario de contacto por ti — ¿lo abro?",
+    "pricing": "El precio depende del alcance. Dime el tipo de proyecto y puedo dar una estimación aproximada.",
+    "about": "DigitalPages está dirigida por Aina y ofrece diseño web, automatización con IA y experiencias digitales que ayudan a negocios a crecer.",
+    "process": "Entiendo tus objetivos, diseño una propuesta clara, desarrollo una experiencia responsiva y la ajusto hasta que el sitio esté listo para lanzar.",
+    "tech": "Uso herramientas web modernas y código limpio para crear sitios rápidos, accesibles y adaptados a móviles que reflejen tu marca.",
+    "automation": "Puedo automatizar flujos de trabajo, implementar funciones mejoradas con IA y conectar tu web con las herramientas que ahorran tiempo.",
+    "design": "Creo interfaces centradas en el usuario, mensajes de marca sólidos y diseños que guían a los visitantes hacia tus objetivos.",
+    "maintenance": "Después del lanzamiento, puedo apoyar actualizaciones, cambios de contenido, comprobaciones de rendimiento y mejoras continuas.",
+    "best_practice": "Recomiendo diseño mobile-first, cargas rápidas, llamadas a la acción claras y un estilo de marca consistente.",
+    "build_site": "Sí, puedo crear una web para tu negocio. Dime el objetivo principal, el público y las funciones que necesitas, y te sugeriré el mejor plan.",
+    "why_choose": "Combino diseño moderno, eficiencia técnica y un proceso profesional para entregar sitios y automatizaciones que ayudan a tu negocio a crecer.",
+    "thanks": "¡De nada! ¿Algo más en lo que pueda ayudar?",
+    "language": "Usa el selector de idioma en la barra superior para cambiar idiomas.",
+    "unknown": "Lo siento, no lo entendí. Puedes preguntar por servicios, proceso, diseño, automatización, o decir 'contacto' para abrir el formulario.",
+    "open_work": "Haz clic aquí para ir a Trabajo.",
+    "quick_services": "Servicios",
+    "quick_process": "Flujo",
+    "quick_tech": "Tecnología",
+    "quick_automation": "Automatización",
+    "quick_design": "Diseño",
+    "quick_contact": "Contacto"
+  }
+}

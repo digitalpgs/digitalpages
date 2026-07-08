@@ -1,0 +1,45 @@
+/* ==========================================
+   MODE FOSC (PER DEFECTE)
+   ========================================== */
+:root {
+  /* Fons i superfícies */
+  --bg: #0a0a0f;
+  --card: rgba(255, 255, 255, 0.04);
+  --border: rgba(255, 255, 255, 0.08);
+
+  /* Textos */
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.65);
+
+  /* Colors de marca (Liles) */
+  --primary: #a855f7;
+  --primary-2: #7c3aed;
+
+  /* Disseny i efectes */
+  --radius: 16px;
+  --glow-opacity: 0.6; /* Cercles de fons brillants */
+  --glow-color: rgba(168, 85, 247, 0.25); /* MODIFICAT: Lila elèctric suau per a fons fosc */
+}
+
+/* ==========================================
+   MODE CLAR (S'ACTIVA AMB JS)
+   ========================================== */
+body.light-mode {
+  /* MODIFICAT: Ahora el fondo es un degradado suave lila rosado para evitar blanco puro */
+  --bg: linear-gradient(135deg, #fdf6ff 0%, #f4ebff 100%);
+  
+  --card: rgba(245, 232, 255, 0.9);
+  --border: rgba(124, 58, 237, 0.2);
+
+  /* Textos amb alt contrast per llegir-se bé */
+  --text: #2a1b4a;
+  --muted: rgba(42, 27, 74, 0.62);
+
+  /* Mantenim els liles de marca adaptats al fons clar i els fem més foscos */
+  --primary: #5b21c6;
+  --primary-2: #4c1d95;
+
+  /* MODIFICAT: Intensifiquem el glow perquè segueixi visible sobre el fons clar */
+  --glow-opacity: 0.52;
+  --glow-color: rgba(92, 33, 198, 0.54);
+}

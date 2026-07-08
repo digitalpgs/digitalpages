@@ -1,0 +1,162 @@
+﻿{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact",
+    "cta": "Let's talk"
+  },
+  "hero": {
+    "tag": "DigitalPages",
+    "heading": "We design digital experiences that feel alive.",
+    "subtitle": "From websites to AI systems, DigitalPages builds modern solutions that help ideas grow into real businesses.",
+    "viewWork": "View work",
+    "build": "Let's build something",
+    "stats": {
+      "modern": "Modern",
+      "design": "Design",
+      "fast": "Fast",
+      "performance": "Performance",
+      "creative": "Creative",
+      "solutions": "Solutions"
+    }
+  },
+  "services": {
+    "tag": "What I do",
+    "heading": "Services that help you grow",
+    "subtitle": "DigitalPages combines design, development and automation to build modern digital experiences.",
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "Modern, fast and responsive websites built to convert visitors into clients."
+    },
+    "aiSolutions": {
+      "title": "AI Solutions",
+      "description": "Intelligent automations and AI tools that save time and scale your business."
+    },
+    "automation": {
+      "title": "Automation",
+      "description": "Automate repetitive tasks and improve your workflow efficiency."
+    },
+    "uiux": {
+      "title": "UI / UX Design",
+      "description": "Clean and modern interfaces focused on user experience and clarity."
+    },
+    "videoEditing": {
+      "title": "Video Editing",
+      "description": "Creative editing for social media, branding and promotional content."
+    },
+    "socialMedia": {
+      "title": "Social Media",
+      "description": "Content strategy and visuals that grow your online presence."
+    }
+  },
+  "about": {
+    "tag": "About me",
+    "heading": "Hi, I'm Aina - the person behind DigitalPages.",
+    "paragraph1": "I'm a young creative mind passionate about design, technology and building digital experiences that actually feel alive. DigitalPages started as a simple idea: create websites that don't just look good, but help people grow.",
+    "paragraph2": "I enjoy combining design, development and automation to build modern solutions for real-world problems. When I'm not working on projects, I'm usually learning something new, exploring ideas or just enjoying life and being myself.",
+    "imageAlt": "Aina - Founder of DigitalPages",
+    "stats": {
+      "creative": "Creative",
+      "mindset": "Mindset",
+      "modern": "Modern",
+      "design": "Design",
+      "fast": "Fast",
+      "learning": "Learning"
+    }
+  },
+  "portfolio": {
+    "tag": "My work",
+    "heading": "Projects that define DigitalPages",
+    "subtitle": "A selection of digital experiences, experiments and future projects.",
+    "project1": {
+      "title": "Coming Soon",
+      "description": "First client project will appear here."
+    },
+    "project2": {
+      "title": "Coming Soon",
+      "description": "AI or web project showcase."
+    },
+    "project3": {
+      "title": "Coming Soon",
+      "description": "Automation or creative work."
+    }
+  },
+  "faq": {
+    "tag": "FAQ",
+    "heading": "Frequently asked questions",
+    "subtitle": "Everything you might want to know before working with DigitalPages.",
+    "q1": {
+      "question": "What services do you offer?",
+      "answer": "Web development, AI solutions, automation, UI/UX design, video editing and social media growth strategies."
+    },
+    "q2": {
+      "question": "Do you work with small businesses?",
+      "answer": "Yes. DigitalPages is designed to help both small projects and growing businesses build a strong digital presence."
+    },
+    "q3": {
+      "question": "How long does a project take?",
+      "answer": "It depends on the complexity, but most projects take between 1 to 4 weeks."
+    },
+    "q4": {
+      "question": "Can I request a custom project?",
+      "answer": "Absolutely. Every project is custom and tailored to your needs and goals."
+    },
+    "q5": {
+      "question": "How can I contact you?",
+      "answer": "You can use the contact form below or send an email to dp.digitalpages@gmail.com."
+    }
+  },
+  "contact": {
+    "tag": "Contact",
+    "heading": "Let's build something great",
+    "subtitle": "Have an idea? A project? Or just want to say hi? Let's talk.",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "submit": "Send message",
+      "note": "Or email me directly: dp.digitalpages@gmail.com"
+    },
+    "info": {
+      "emailHeading": "Email",
+      "socialHeading": "Social",
+      "responseHeading": "Response time",
+      "responseText": "Usually within 24-48h"
+    }
+  },
+  "footer": {
+    "navigationHeading": "Navigation",
+    "contactHeading": "Contact",
+    "socialHeading": "Social",
+    "bottom": "© 2026 DigitalPages. All rights reserved."
+  },
+  "assistant": {
+    "greeting": "Hello — I'm Digi, your assistant. Ask me anything about the site.",
+    "help": "Hi! I'm Digi — how can I help you today?",
+    "services": "I can help with web development, AI solutions, automation, UI/UX and video editing. Want to see examples?",
+    "portfolio": "You can find projects in the Work section. Would you like me to scroll there?",
+    "contact": "I can open the contact form for you — shall I?",
+    "pricing": "Pricing depends on scope. Tell me the project type and I can give a rough estimate.",
+    "about": "DigitalPages is led by Aina and delivers web design, AI automation, and digital experiences that help businesses grow.",
+    "process": "I work by understanding your goals, designing a clean concept, building a responsive experience, and refining it until your site is launch-ready.",
+    "tech": "I use modern web tools and clean code to build fast, accessible, mobile-first websites that align with your brand.",
+    "automation": "I can automate workflows, implement AI-enhanced features, and connect your website with the tools that save you time.",
+    "design": "I create user-focused interfaces, strong brand messaging, and layouts that guide visitors toward your goals.",
+    "maintenance": "After launch, I can support updates, content changes, performance checks, and ongoing improvements.",
+    "best_practice": "My recommended approach is mobile-first design, fast loading, clear calls-to-action, and consistent brand styling.",
+    "build_site": "Yes, I can create a website for your business. Tell me the main goal, audience and features you need, and I’ll suggest the best plan.",
+    "why_choose": "I combine modern design, technical efficiency and a professional process to deliver websites and automation that help your business grow.",
+    "thanks": "You're welcome! Anything else I can help with?",
+    "language": "Use the language selector in the navbar to change languages.",
+    "unknown": "Sorry, I didn't catch that. You can ask about services, process, design, automation, or say 'contact' to open the form.",
+    "open_work": "Click here to go to Work.",
+    "quick_services": "Services",
+    "quick_process": "Workflow",
+    "quick_tech": "Technology",
+    "quick_automation": "Automation",
+    "quick_design": "Design",
+    "quick_contact": "Contact"
+  }
+}
