@@ -1,13 +1,18 @@
-const form = document.getElementById("contactForm");
+window.addEventListener("componentsLoaded", () => {
+  const form = document.getElementById("contactForm");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  // Seguretat per si de cas el formulari triga una fracció de segon més a estar llest
+  if (!form) return;
 
-  const name = form.querySelector("input[type='text']").value;
-  const email = form.querySelector("input[type='email']").value;
-  const message = form.querySelector("textarea").value;
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  alert("Message sent! I will reply soon 💜");
+    const name = form.querySelector("input[type='text']").value;
+    const email = form.querySelector("input[type='email']").value;
+    const message = form.querySelector("textarea").value;
 
-  form.reset();
+    alert("Message sent! I will reply soon 💜");
+
+    form.reset();
+  });
 });

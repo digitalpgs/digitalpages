@@ -13,16 +13,28 @@ window.addEventListener('componentsLoaded', async () => {
 
   function loadHistory() {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
+      const raw = sessionStorage.getItem(STORAGE_KEY);
       return raw ? JSON.parse(raw) : [];
     } catch (e) { return []; }
   }
 
   function saveHistory(list) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+    try {
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+    } catch (e) {}
   }
 
-  let history = loadHistory();
+  let history = [];
+  try {
+    sessionStorage.removeItem(STORAGE_KEY);
+    localStorage.removeItem(STORAGE_KEY);
+  } catch (e) {}
+
+  history = loadHistory();
+  if (history.length) {
+    history = [];
+    saveHistory(history);
+  }
 
   function renderMessages() {
     if (!messagesEl) return;
@@ -172,12 +184,4 @@ window.addEventListener('componentsLoaded', async () => {
   window.addEventListener('languageChanged', async () => {
     await renderActions();
   });
-
-  setTimeout(async () => {
-    const lang = document.documentElement.lang || 'en';
-    const dict = (typeof window.loadLanguageFile === "function") ? await window.loadLanguageFile(lang) : {};
-    showChat();
-    const greeting = (typeof window.getTranslation === "function") ? window.getTranslation(dict, 'assistant.greeting') : "Hello — I'm Digi, your assistant. Ask me anything about the site.";
-    addMessage('bot', greeting);
-  }, 1200);
 });
