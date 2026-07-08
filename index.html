@@ -4,6 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <script>
+    if (window.location.hostname.includes('github.io')) {
+      const base = document.createElement('base');
+      base.href = '/digitalpages/'; // Només s'aplica quan estem a GitHub Pages
+      document.head.appendChild(base);
+    }
+    // En local (Live Server) no afegim cap etiqueta <base>, així el navegador
+    // utilitza les rutes relatives naturals de la teva carpeta sense confondre's.
+  </script>
 
   <title>DigitalPages | Modern Digital Experiences</title>
   <meta name="description" content="DigitalPages creates modern websites, AI solutions and digital experiences that help businesses grow.">
