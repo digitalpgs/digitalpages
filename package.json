@@ -1,0 +1,22 @@
+{
+  "name": "digitalpages",
+  "version": "1.0.0",
+  "description": "DigitalPages - Modern Digital Experiences & Solutions",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 8000 -o",
+    "preview": "npx http-server -p 8000"
+  },
+  "keywords": [
+    "website",
+    "portfolio",
+    "digital",
+    "ai",
+    "services"
+  ],
+  "author": "digitalpgs",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

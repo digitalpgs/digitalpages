@@ -1,0 +1,148 @@
+  1: {
+  2:   "nav": {
+  3:     "home": "Home",
+  4:     "services": "Services",
+  5:     "about": "About",
+  6:     "work": "Work",
+  7:     "contact": "Contact",
+  8:     "cta": "Let's talk"
+  9:   },
+ 10:   "hero": {
+ 11:     "tag": "DigitalPages",
+ 12:     "heading": "We design digital experiences that feel alive.",
+ 13:     "subtitle": "From websites to AI systems, DigitalPages builds modern solutions that help ideas grow into real businesses.",
+ 14:     "viewWork": "View work",
+ 15:     "build": "Let's build something",
+ 16:     "stats": {
+ 17:       "modern": "Modern",
+ 18:       "design": "Design",
+ 19:       "fast": "Fast",
+ 20:       "performance": "Performance",
+ 21:       "creative": "Creative",
+ 22:       "solutions": "Solutions"
+ 23:     }
+ 24:   },
+ 25:   "services": {
+ 26:     "tag": "What I do",
+ 27:     "heading": "Services that help you grow",
+ 28:     "subtitle": "DigitalPages combines design, development and automation to build modern digital experiences.",
+ 29:     "webDevelopment": {
+ 30:       "title": "Web Development",
+ 31:       "description": "Modern, fast and responsive websites built to convert visitors into clients."
+ 32:     },
+ 33:     "aiSolutions": {
+ 34:       "title": "AI Solutions",
+ 35:       "description": "Intelligent automations and AI tools that save time and scale your business."
+ 36:     },
+ 37:     "automation": {
+ 38:       "title": "Automation",
+ 39:       "description": "Automate repetitive tasks and improve your workflow efficiency."
+ 40:     },
+ 41:     "uiux": {
+ 42:       "title": "UI / UX Design",
+ 43:       "description": "Clean and modern interfaces focused on user experience and clarity."
+ 44:     },
+ 45:     "videoEditing": {
+ 46:       "title": "Video Editing",
+ 47:       "description": "Creative editing for social media, branding and promotional content."
+ 48:     },
+ 49:     "socialMedia": {
+ 50:       "title": "Social Media",
+ 51:       "description": "Content strategy and visuals that grow your online presence."
+ 52:     }
+ 53:   },
+ 54:   "about": {
+ 55:     "tag": "About me",
+ 56:     "heading": "Hi, I'm Aina — the person behind DigitalPages.",
+ 57:     "paragraph1": "I'm a young creative mind passionate about design, technology and building digital experiences that actually feel alive. DigitalPages started as a simple idea: create websites that don't just look good, but help people grow.",
+ 58:     "paragraph2": "I enjoy combining design, development and automation to build modern solutions for real-world problems. When I'm not working on projects, I'm usually learning something new, exploring ideas or just enjoying life and being myself.",
+ 59:     "imageAlt": "Aina - Founder of DigitalPages",
+ 60:     "stats": {
+ 61:       "creative": "Creative",
+ 62:       "mindset": "Mindset",
+ 63:       "modern": "Modern",
+ 64:       "design": "Design",
+ 65:       "fast": "Fast",
+ 66:       "learning": "Learning"
+ 67:     }
+ 68:   },
+ 69:   "portfolio": {
+ 70:     "tag": "My work",
+ 71:     "heading": "Projects that define DigitalPages",
+ 72:     "subtitle": "A selection of digital experiences, experiments and future projects.",
+ 73:     "project1": {
+ 74:       "title": "Coming Soon",
+ 75:       "description": "First client project will appear here."
+ 76:     },
+ 77:     "project2": {
+ 78:       "title": "Coming Soon",
+ 79:       "description": "AI or web project showcase."
+ 80:     },
+ 81:     "project3": {
+ 82:       "title": "Coming Soon",
+ 83:       "description": "Automation or creative work."
+ 84:     }
+ 85:   },
+ 86:   "faq": {
+ 87:     "tag": "FAQ",
+ 88:     "heading": "Frequently asked questions",
+ 89:     "subtitle": "Everything you might want to know before working with DigitalPages.",
+ 90:     "q1": {
+ 91:       "question": "What services do you offer?",
+ 92:       "answer": "Web development, AI solutions, automation, UI/UX design, video editing and social media growth strategies."
+ 93:     },
+ 94:     "q2": {
+ 95:       "question": "Do you work with small businesses?",
+ 96:       "answer": "Yes. DigitalPages is designed to help both small projects and growing businesses build a strong digital presence."
+ 97:     },
+ 98:     "q3": {
+ 99:       "question": "How long does a project take?",
+100:       "answer": "It depends on the complexity, but most projects take between 1 to 4 weeks."
+101:     },
+102:     "q4": {
+103:       "question": "Can I request a custom project?",
+104:       "answer": "Absolutely. Every project is custom and tailored to your needs and goals."
+105:     },
+106:     "q5": {
+107:       "question": "How can I contact you?",
+108:       "answer": "You can use the contact form below or send an email to dp.digitalpages@gmail.com."
+109:     }
+110:   },
+111:   "contact": {
+112:     "tag": "Contact",
+113:     "heading": "Let's build something great",
+114:     "subtitle": "Have an idea? A project? Or just want to say hi? Let�s talk.",
+115:     "form": {
+116:       "name": "Your name",
+117:       "email": "Your email",
+118:       "message": "Your message",
+119:       "submit": "Send message",
+120:       "note": "Or email me directly: dp.digitalpages@gmail.com"
+121:     },
+122:     "info": {
+123:       "emailHeading": "Email",
+124:       "socialHeading": "Social",
+125:       "responseHeading": "Response time",
+126:       "responseText": "Usually within 24–48h"
+127:     }
+128:   },
+129:   "footer": {
+130:     "navigationHeading": "Navigation",
+131:     "contactHeading": "Contact",
+132:     "socialHeading": "Social",
+133:     "bottom": "© 2026 DigitalPages. All rights reserved."
+134:   },
+135:   "assistant": {
+136:     "greeting": "Hello — I'm Digi, your assistant. Ask me anything about the site.",
+137:     "help": "Hi! I'm Digi — how can I help you today?",
+138:     "services": "I can help with web development, AI solutions, automation, UI/UX and video editing. Want to see examples?",
+139:     "portfolio": "You can find projects in the Work section. Would you like me to scroll there?",
+140:     "contact": "I can open the contact form for you — shall I?",
+141:     "pricing": "Pricing depends on scope. Tell me the project type and I can give a rough estimate.",
+142:     "thanks": "You're welcome! Anything else I can help with?",
+143:     "language": "Use the language selector in the navbar to change languages.",
+144:     "unknown": "Sorry, I didn't catch that. You can ask about services, portfolio, or say 'contact' to open the form.",
+145:     "open_work": "Click here to go to Work."
+146:   }
+147:   }
+148: }
