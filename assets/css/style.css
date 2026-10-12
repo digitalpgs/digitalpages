@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* MODIFICAT: "background" accepta tant colors sòlids (fosc) com degradats (clar) */
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  
+  /* MODIFICAT: Transició suau adaptada per a canvis de degradats */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* LINKS GLOBALS */
+a {
+  color: inherit;
+}
+
+/* BACKGROUND GLOW */
+.background-glow {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  height: 900px;
+
+  transform: translate(-50%, -50%);
+  /* MODIFICAT: Ara fa servir la variable de color dinàmic per al fons blur */
+  background: radial-gradient(circle, var(--glow-color), transparent 60%);
+
+  filter: blur(80px);
+  z-index: -1;
+  
+  /* MODIFICAT: S'adapta a la intensitat del mode fosc o clar */
+  opacity: var(--glow-opacity);
+  transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.background-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.18), transparent 46%);
+  filter: blur(30px);
+  opacity: 0.9;
+  transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+body.light-mode .background-glow {
+  background: radial-gradient(circle, rgba(92, 33, 198, 0.56), transparent 50%);
+  opacity: 0.52;
+}
+
+body.light-mode .background-glow::after {
+  background: radial-gradient(circle, rgba(76, 29, 149, 0.24), transparent 45%);
+  filter: blur(68px);
+  opacity: 0.78;
+}
+
+/* BUTTON BASE */
+.btn-primary {
+  /* MODIFICAT: Utilitza els gradients controlats per les variables de marca */
+  background: linear-gradient(135deg, var(--primary-2), var(--primary));
+  color: white; /* Manté el text blanc per contrastar amb el lila fosc */
+
+  padding: 12px 18px;
+  border-radius: 12px;
+
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(168,85,247,0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(168,85,247,0.35);
+}
+
+/* PANTALLA DE CÀRREGA INICIAL */
+body:not(.loaded)::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  /* MODIFICAT: S'adapta automàticament al color o degradat de fons configurat */
+  background: var(--bg);
+  z-index: 9999;
+}
+
+/* EFFECTES DE CURSOR PERSONALITZAT */
+.cursor {
+  width: 8px;
+  height: 8px;
+  /* MODIFICAT: Inverteix el color del punt (blanc en fosc, negre en clar) */
+  background: var(--text);
+  border-radius: 50%;
+
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor-blur {
+  width: 40px;
+  height: 40px;
+
+  /* MODIFICAT: També utilitza el color adaptatiu per al blur del ratolí */
+  background: var(--glow-color);
+  border-radius: 50%;
+
+  position: fixed;
+  pointer-events: none;
+  filter: blur(12px);
+  z-index: 9998;
+  transition: background 0.3s ease;
+}
+
+/* TARGETES GLOBALS (SERVEIS, PROJECTES, FORMULARI) */
+.service-card,
+.project-card,
+.contact-form,
+.info-card {
+  /* MODIFICAT: El fons i la vora varien i es tornen foscos o clars segons el tema */
+  background: var(--card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ASSISTANT WIDGET FIXED */
+.assistant-widget {
+  position: fixed !important;
+  right: 24px !important;
+  bottom: 24px !important;
+  top: auto !important;          
+  left: auto !important;         
+  height: auto !important;       
+  width: auto !important;        
+  z-index: 99999 !important;     
+  
+  display: flex !important;
+  flex-direction: column-reverse !important; /* Creix cap amunt */
+  align-items: flex-end !important;
+  gap: 12px !important;
+}
+
+.assistant-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, var(--primary-2), var(--primary));
+  color: #fff;
+  font-size: 22px;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(92,33,198,0.24);
+  position: relative;
+}
+
+.assistant-btn::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(92,33,198,0.12), transparent 40%);
+  filter: blur(8px);
+  animation: assistant-pulse 2.6s infinite;
+  z-index: -1;
+}
+
+@keyframes assistant-pulse {
+  0% { transform: scale(0.9); opacity: 0.6 }
+  70% { transform: scale(1.12); opacity: 0.18 }
+  100% { transform: scale(0.9); opacity: 0.6 }
+}
+
+.assistant-bubble {
+  width: 220px;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  transform-origin: bottom right;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+  opacity: 0;
+  transform: translateY(8px) scale(0.98);
+  pointer-events: none;
+}
+
+.assistant-bubble.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.assistant-greeting {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.assistant-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+  padding: 0 12px 10px;
+}
+
+.assistant-action {
+  background: linear-gradient(135deg, rgba(92,33,198,0.12), rgba(168,85,247,0.18));
+  border: 1px solid rgba(168,85,247,0.18);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.assistant-action:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, rgba(92,33,198,0.18), rgba(168,85,247,0.24));
+}
+
+/* Digi Chat Base */
+.assistant-chat {
+  width: 300px;
+  max-width: calc(100vw - 48px);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+  transform-origin: bottom right;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+  pointer-events: none;
+}
+
+.assistant-chat.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.assistant-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+}
+
+.assistant-header-left { display:flex; gap:10px; align-items:center }
+.assistant-avatar { font-size:22px }
+.assistant-name { font-weight:700 }
+.assistant-sub { font-size:12px; opacity:0.7 }
+.assistant-close { background:transparent; border:none; cursor:pointer; font-size:16px; color:var(--muted) }
+
+.assistant-messages {
+  max-height: 340px;
+  min-height: 120px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  background: transparent;
+}
+
+.msg { max-width: 82%; padding: 8px 10px; border-radius: 10px; font-size:14px }
+.msg.bot { background: rgba(124,58,237,0.12); color: var(--text); align-self: flex-start }
+.msg.user { background: rgba(0,0,0,0.06); color: var(--text); align-self: flex-end }
+
+.assistant-input-area { display:flex; gap:8px; padding: 10px; border-top:1px solid var(--border) }
+.assistant-input { flex:1; padding:8px 10px; border-radius:8px; border:1px solid var(--border); background:transparent; color:var(--text); outline:none }
+.assistant-send { padding:8px 10px; border-radius:8px; background:linear-gradient(135deg,var(--primary-2),var(--primary)); color:#fff; border:none; cursor:pointer }
+
+/* CONFIGURACIÓ PER AL MODE FOSC (SENSE TRANSPARÈNCIES PER MILLORAR EL CONTRAST) */
+body:not(.light-mode) .assistant-chat {
+  background: #0f0f11 !important; 
+  backdrop-filter: none !important; 
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5) !important;
+}
+
+body:not(.light-mode) .assistant-messages {
+  background: #0f0f11 !important;
+}
+
+body:not(.light-mode) .assistant-input-area {
+  background: #141416 !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+body:not(.light-mode) .assistant-input {
+  background: #1e1e22 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+body:not(.light-mode) .msg.bot {
+  background: #2e1654 !important; /* Lila fosc sòlid */
+  color: #ffffff !important;
+}
+
+body:not(.light-mode) .msg.user {
+  background: #27272a !important; /* Gris sòlid */
+  color: #ffffff !important;
+}
+
+/* RESPONSIVE / MÒBILS */
+@media (max-width: 600px) {
+  .assistant-widget { 
+    right: 14px !important; 
+    bottom: 14px !important; 
+  }
+  .assistant-bubble { width: 190px; }
+}
+
+/* typing indicator */
+.typing { width:36px; display:flex; gap:4px; align-items:center }
+.typing span { width:6px; height:6px; background:rgba(255,255,255,0.8); border-radius:50%; opacity:0.6; animation: blink 1s infinite }
+.typing span:nth-child(2){ animation-delay:0.12s }
+.typing span:nth-child(3){ animation-delay:0.24s }
+@keyframes blink { 0%{opacity:0.2}50%{opacity:1}100%{opacity:0.2} }
+
+button, a, .service-card, .project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover, a:hover {
+  transform: translateY(-2px);
+}
